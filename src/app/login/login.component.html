@@ -10,14 +10,14 @@
                     <h2 class="text-center text-primary">Login Form</h2>
                     <div class="m-3">
                         <!-- acno -->
-                        <input (change)="acnoChange($event)" class="form-control" type="text" [placeholder]="accPlaceholder">
+                        <input #acno class="form-control" type="text" [placeholder]="accPlaceholder">
                     </div>
                     <!-- pswd -->
                     <div class="m-3">
-                        <input (change)="pswdChange($event)" class="form-control" type="password" placeholder="Password">
+                        <input #pswd class="form-control" type="password" placeholder="Password">
                     </div>
                     <div class="m-3">
-                        <input (click)="login()" type="button" value="Log In" class="btn btn-primary" >
+                        <input (click)="login(acno,pswd)" type="button" value="Log In" class="btn btn-primary" >
                     </div>
            
                     <div class="ms-3">

@@ -28,3 +28,7 @@ Basic Concepts
             3.1.2.1 Event Binding - (event-name)=""function-call"
 
             3.1.2.2 Event Binding using $event- (event-name)=""function-call($event)"
+            
+            3.1.2.3 Template referancing Variable: syntax:#variable-name
+
+

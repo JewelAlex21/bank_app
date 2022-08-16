@@ -45,14 +45,43 @@ export class LoginComponent implements OnInit {
     
   }
 
-  login()
+  // login()
+  // {
+  //   // alert('Login Successfully')
+  //   // fetch acno
+  //   var acno =this.acno
+  //   console.log(acno);
+  //   var pswd=this.pswd
+  //   console.log(pswd);
+
+  //   let userDetails = this.database
+  //   if(acno in userDetails)
+  //   {
+  //     if(pswd==userDetails[acno]['password'])
+  //     {
+  //       alert("Login Successfully")
+  //     }
+  //     else
+  //     {
+  //       alert("Incorrect Password")
+  //     }
+  //   }
+  //   else
+  //   {
+  //     alert("Account Doesnot Exist")
+  //   }
+
+  // }
+
+
+  login(a:any,p:any)
   {
+    console.log(a);
     // alert('Login Successfully')
     // fetch acno
-    var acno =this.acno
-    console.log(acno);
-    var pswd=this.pswd
-    console.log(pswd);
+    var acno =a.value
+    
+    var pswd=p.value
 
     let userDetails = this.database
     if(acno in userDetails)
@@ -72,7 +101,6 @@ export class LoginComponent implements OnInit {
     }
 
   }
-
   
 
 }
