@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -27,61 +28,21 @@ export class LoginComponent implements OnInit {
     1002:{acno:1002,username:'Sanjay',password:1002,balance:5000}
 
   }
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   // user defined function
   
-  acnoChange(event:any)
+ 
+
+  login()
   {
-    this.acno = event.target.value
-  }
-
-  pswdChange(event:any)
-  {
-    this.pswd = event.target.value
-    
-  }
-
-  // login()
-  // {
-  //   // alert('Login Successfully')
-  //   // fetch acno
-  //   var acno =this.acno
-  //   console.log(acno);
-  //   var pswd=this.pswd
-  //   console.log(pswd);
-
-  //   let userDetails = this.database
-  //   if(acno in userDetails)
-  //   {
-  //     if(pswd==userDetails[acno]['password'])
-  //     {
-  //       alert("Login Successfully")
-  //     }
-  //     else
-  //     {
-  //       alert("Incorrect Password")
-  //     }
-  //   }
-  //   else
-  //   {
-  //     alert("Account Doesnot Exist")
-  //   }
-
-  // }
-
-
-  login(a:any,p:any)
-  {
-    console.log(a);
     // alert('Login Successfully')
     // fetch acno
-    var acno =a.value
-    
-    var pswd=p.value
+    var acno =this.acno
+    var pswd=this.pswd
 
     let userDetails = this.database
     if(acno in userDetails)
@@ -89,6 +50,8 @@ export class LoginComponent implements OnInit {
       if(pswd==userDetails[acno]['password'])
       {
         alert("Login Successfully")
+        // navigate to dashboard
+        this.router.navigateByUrl('dashboard')
       }
       else
       {
@@ -101,6 +64,9 @@ export class LoginComponent implements OnInit {
     }
 
   }
+
+
+  
   
 
 }

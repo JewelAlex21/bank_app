@@ -1,4 +1,3 @@
-<h1 class="text-center text-primary">{{header}} {{dot}}</h1>
 <div class="row">
 
     <div class="col-lg-4"></div>
@@ -7,22 +6,26 @@
            <div class="border-container">
             
                 <form action="" class="border p-5">
-                    <h2 class="text-center text-primary">Login Form</h2>
+                    <h2 class="text-center text-primary">Register Form</h2>
+                    <div class="m-3">
+                        
+                        <input [(ngModel)]="uname" name="uname" class="form-control" type="text" placeholder="Username">
+                    </div>
                     <div class="m-3">
                         <!-- acno (change)="acnoChange($event)" -->
                         <!-- #acno - Template Reference -->
-                        <input [(ngModel)]="acno" name="acno" class="form-control" type="text" [placeholder]="accPlaceholder">
+                        <input [(ngModel)]="acno" name="acno" class="form-control" type="text" placeholder="Account Number">
                     </div>
                     <!-- pswd -->
                     <div class="m-3">
                         <input [(ngModel)]="pswd" name="pswd" class="form-control" type="password" placeholder="Password">
                     </div>
                     <div class="m-3">
-                        <input (click)="login()" type="button" value="Log In" class="btn btn-primary" >
+                        <input (click)="register()" type="button" value="Register" class="btn btn-primary" >
                     </div>
            
                     <div class="ms-3">
-                        <label for="" class="text-white">Not a user? Click here to </label><a routerLink="register" class="m-2 text-primary">Register</a>
+                        <label for="" class="text-white">Already user? Click here to </label><a routerLink="" class="m-2 text-primary">Login</a>
                     </div>
             
         </form>

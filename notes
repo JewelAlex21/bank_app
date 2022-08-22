@@ -31,4 +31,34 @@ Basic Concepts
             
             3.1.2.3 Template referancing Variable: syntax:#variable-name
 
+     3.2 Two way Binding - same time data sharing in both direction
+
+        3.2.1 FormsModule - Import in AppModule
+
+            ngModel - syntax: [(ngModel)]="variable-name" , set name attribute if it is inside form tag
+
+
+4. Component Path set up
+
+5. Dependency Injection - inside constructor of a class
+
+6. Angular Services
+
+7. ngSubmit
+
+8. Angular Form
+
+    8.1 Template Driven Form
+
+    8.2 Modern Driven Form - ReactiveForms - Import ReactiveFormsModule
+        (form group, form array, form control)
+
+9.Angular Directives - DOM Manipulation
+
+    9.1 Component Directives
+
+    9.2 Structural Directive - prefix
+
+    
+
 
