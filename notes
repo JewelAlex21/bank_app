@@ -6,6 +6,8 @@ Angular - Front-end
  
 3. ng g c component_name - create a component
 
+4. ng g s service-name - create a service
+
 
 Basic Concepts
 

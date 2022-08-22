@@ -5,7 +5,7 @@
         <div class="col-lg-4" style="margin-top:100px ;">
            <div class="border-container">
             
-                <form action="" class="border p-5">
+                <form (ngSubmit)="register()" action="" class="border p-5">
                     <h2 class="text-center text-primary">Register Form</h2>
                     <div class="m-3">
                         
@@ -21,7 +21,7 @@
                         <input [(ngModel)]="pswd" name="pswd" class="form-control" type="password" placeholder="Password">
                     </div>
                     <div class="m-3">
-                        <input (click)="register()" type="button" value="Register" class="btn btn-primary" >
+                        <input  type="submit" value="Register" class="btn btn-primary" >
                     </div>
            
                     <div class="ms-3">
